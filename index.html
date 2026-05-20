@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CarePlus Medical Center — healthcare booking and information" />
+    <title>CarePlus Medical Center</title>
+    <!-- HashRouter needs #/ in the URL; without it the app can look blank -->
+    <script>
+      (function () {
+        var h = window.location.hash
+        if (!h || h === '#') {
+          window.location.hash = '#/'
+        }
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root">
+      <p style="font-family: sans-serif; padding: 1rem">
+        Loading… If this text stays forever: open a terminal in the project folder and run
+        <strong> npm run dev </strong>, then use the URL it prints (not the HTML file directly).
+      </p>
+    </div>
+    <noscript>Enable JavaScript to use this app.</noscript>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
